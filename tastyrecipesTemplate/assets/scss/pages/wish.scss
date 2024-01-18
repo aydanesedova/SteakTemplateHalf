@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 131px;
+    width: 100%;
+    background-color: transparent;
+    background-color: #222;
+    z-index: 1;
+    position: absolute;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 131px;
+        width: 100%;
+
+        .steakList {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            gap: 35px;
+
+            p {
+                font-family: Roboto, sans-serif;
+                font-size: 15px;
+                color: #fff;
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+            a {
+                text-decoration: none;
+
+                p {
+                    font-family: Roboto, sans-serif;
+                    font-size: 15px;
+                    color: #fff;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .dropdown {
+        display: none;
+
+        button {
+            background-color: transparent;
+            color: #000;
+            font-size: 30px;
+            border: none;
+        }
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    header {
+        .container {
+            .steakList {
+                display: none;
+            }
+
+            .dropdown {
+                display: block;
+
+                p {
+                    font-family: Roboto, sans-serif;
+                    font-size: 15px;
+                    color: #000;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+
+                a {
+                    text-decoration: none;
+
+                    p {
+                        font-family: Roboto, sans-serif;
+                        font-size: 15px;
+                        color: #000;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+#wish {
+    min-height: 750px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    #wishProducts {
+        min-height: 700px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .wishDiv {
+            width: 32%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            h2 {
+                color: #222;
+                font-family: Satisfy, cursive;
+                font-size: 20px;
+            }
+
+            img {
+                width: 80%;
+                border-radius: 15px;
+            }
+
+            button {
+                color: #FFC104;
+                font-weight: 700;
+                background-color: transparent;
+                border: none;
+
+            }
+        }
+    }
+
+}

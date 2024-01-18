@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 131px;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1;
+  position: absolute;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 131px;
+  width: 100%;
+}
+header .container .steakList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 35px;
+}
+header .container .steakList p {
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+}
+header .container .steakList a {
+  text-decoration: none;
+}
+header .container .steakList a p {
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+}
+header .dropdown {
+  display: none;
+}
+header .dropdown button {
+  background-color: transparent;
+  color: #000;
+  font-size: 30px;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  header .container .steakList {
+    display: none;
+  }
+  header .container .dropdown {
+    display: block;
+  }
+  header .container .dropdown p {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  header .container .dropdown a {
+    text-decoration: none;
+  }
+  header .container .dropdown a p {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+#chicken {
+  min-height: 641px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/assets/images/banner.png);
+  background-position: center;
+  background-size: cover;
+}
+#chicken .chickenTxt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#chicken .chickenTxt h1 {
+  color: #fff;
+  font-family: Satisfy, cursive;
+  font-size: 100px;
+  width: 70%;
+  text-align: center;
+}
+
+#chickenProducts {
+  min-height: 900px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#chickenProducts #productsAll {
+  min-height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#chickenProducts #productsAll .miniDiv {
+  width: 32%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#chickenProducts #productsAll .miniDiv h2 {
+  color: #222;
+  font-family: Satisfy, cursive;
+  font-size: 20px;
+}
+#chickenProducts #productsAll .miniDiv img {
+  width: 80%;
+  border-radius: 15px;
+}
+#chickenProducts #productsAll .miniDiv .wishhAdd {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#chickenProducts #productsAll .miniDiv .wishhAdd button {
+  color: #FFC104;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+}
+#chickenProducts #productsAll .miniDiv .wishhAdd button i {
+  font-size: 20px;
+  color: #FFC104;
+  transition: 0.5s ease;
+  background-color: transparent;
+}
+#chickenProducts #productsAll .miniDiv .wishhAdd button i:hover {
+  color: #c29306;
+}
+#chickenProducts .loadMore {
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#chickenProducts .loadMore button {
+  width: 15%;
+  min-height: 50px;
+  border: none;
+  background-color: #FFC104;
+  color: #fff;
+  font-weight: 700;
+}

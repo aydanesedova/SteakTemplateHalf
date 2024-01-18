@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 131px;
+  width: 100%;
+  background-color: transparent;
+  background-color: #222;
+  z-index: 1;
+  position: absolute;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 131px;
+  width: 100%;
+}
+header .container .steakList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 35px;
+}
+header .container .steakList p {
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+header .container .steakList a {
+  text-decoration: none;
+}
+header .container .steakList a p {
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+header .dropdown {
+  display: none;
+}
+header .dropdown button {
+  background-color: transparent;
+  color: #000;
+  font-size: 30px;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  header .container .steakList {
+    display: none;
+  }
+  header .container .dropdown {
+    display: block;
+  }
+  header .container .dropdown p {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  header .container .dropdown a {
+    text-decoration: none;
+  }
+  header .container .dropdown a p {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+#wish {
+  min-height: 750px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#wish #wishProducts {
+  min-height: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#wish #wishProducts .wishDiv {
+  width: 32%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#wish #wishProducts .wishDiv h2 {
+  color: #222;
+  font-family: Satisfy, cursive;
+  font-size: 20px;
+}
+#wish #wishProducts .wishDiv img {
+  width: 80%;
+  border-radius: 15px;
+}
+#wish #wishProducts .wishDiv button {
+  color: #FFC104;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+}

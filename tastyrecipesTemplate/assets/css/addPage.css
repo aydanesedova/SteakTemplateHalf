@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 131px;
+  width: 100%;
+  background-color: transparent;
+  background-color: #222;
+  z-index: 1;
+  position: absolute;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 131px;
+  width: 100%;
+}
+header .container .steakList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 35px;
+}
+header .container .steakList p {
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+header .container .steakList a {
+  text-decoration: none;
+}
+header .container .steakList a p {
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+header .dropdown {
+  display: none;
+}
+header .dropdown button {
+  background-color: transparent;
+  color: #000;
+  font-size: 30px;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  header .container .steakList {
+    display: none;
+  }
+  header .container .dropdown {
+    display: block;
+  }
+  header .container .dropdown p {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  header .container .dropdown a {
+    text-decoration: none;
+  }
+  header .container .dropdown a p {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+#formContainer {
+  min-height: 2500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#formContainer #myForm {
+  width: 80%;
+  min-height: 100px;
+  display: flex;
+  min-height: 500px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #222;
+  border-radius: 15px;
+}
+#formContainer #myForm h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Satisfy, cursive;
+  font-size: 55px;
+}
+#formContainer #myForm div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+#formContainer #myForm div input {
+  width: 80%;
+  min-height: 40px;
+  border: 2px solid #bab5b5;
+  border-radius: 0px;
+}
+#formContainer #myForm div button {
+  width: 18%;
+  min-height: 45px;
+  background-color: #222;
+  font-weight: 700;
+  border: none;
+  border-radius: 0px;
+}
+#formContainer #addContainer {
+  min-height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#formContainer #addContainer #addPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  min-height: 450px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid #222;
+}
+#formContainer #addContainer #addPage .miniDiv {
+  width: 98%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#formContainer #addContainer #addPage .miniDiv h2 {
+  color: #222;
+  width: 35%;
+  font-size: 20px;
+}
+#formContainer #addContainer #addPage .miniDiv img {
+  width: 80%;
+  border-radius: 15px;
+}
+#formContainer #addContainer #addPage .miniDiv button {
+  color: #FFC104;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+}

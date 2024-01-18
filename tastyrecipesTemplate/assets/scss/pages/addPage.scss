@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 131px;
+    width: 100%;
+    background-color: transparent;
+    background-color: #222;
+    z-index: 1;
+    position: absolute;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 131px;
+        width: 100%;
+
+        .steakList {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            gap: 35px;
+
+            p {
+                font-family: Roboto, sans-serif;
+                font-size: 15px;
+                color: #fff;
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+            a {
+                text-decoration: none;
+
+                p {
+                    font-family: Roboto, sans-serif;
+                    font-size: 15px;
+                    color: #fff;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .dropdown {
+        display: none;
+
+        button {
+            background-color: transparent;
+            color: #000;
+            font-size: 30px;
+            border: none;
+        }
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    header {
+        .container {
+            .steakList {
+                display: none;
+            }
+
+            .dropdown {
+                display: block;
+
+                p {
+                    font-family: Roboto, sans-serif;
+                    font-size: 15px;
+                    color: #000;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+
+                a {
+                    text-decoration: none;
+
+                    p {
+                        font-family: Roboto, sans-serif;
+                        font-size: 15px;
+                        color: #000;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#formContainer {
+    min-height: 2500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    #myForm {
+        width: 80%;
+        min-height: 100px;
+        display: flex;
+            min-height: 500px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #222;
+        border-radius: 15px;
+
+        h2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Satisfy, cursive;
+            font-size: 55px;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+
+            input {
+                width: 80%;
+                min-height: 40px;
+                border: 2px solid #bab5b5;
+                border-radius: 0px;
+            }
+
+            button {
+                width: 18%;
+                min-height: 45px;
+                background-color: #222;
+                font-weight: 700;
+                border: none;
+                border-radius: 0px;
+            }
+        }
+    }
+
+    #addContainer {
+        min-height: 500px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        #addPage {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            min-height: 450px;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 10px;
+            border: 2px solid #222;
+
+
+            .miniDiv {
+                width: 98%;
+                min-height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                h2 {
+                    color: #222;
+                    width: 35%;
+                    font-size: 20px;
+                }
+
+                img {
+                    width: 80%;
+                    border-radius: 15px;
+                }
+
+
+
+                button {
+                    color: #FFC104;
+                    font-weight: 700;
+                    background-color: transparent;
+                    border: none;
+                    font-size: 20px;
+
+
+                }
+            }
+
+
+        }
+    }
+
+}

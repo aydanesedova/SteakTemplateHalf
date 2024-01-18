@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 131px;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+    position: absolute;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 131px;
+        width: 100%;
+
+        .steakList {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            gap: 35px;
+
+            p {
+                font-family: Roboto, sans-serif;
+                font-size: 15px;
+                color: #000;
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+            a {
+                text-decoration: none;
+
+                p {
+                    font-family: Roboto, sans-serif;
+                    font-size: 15px;
+                    color: #000;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .dropdown {
+        display: none;
+
+        button {
+            background-color: transparent;
+            color: #000;
+            font-size: 30px;
+            border: none;
+        }
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    header {
+        .container {
+            .steakList {
+                display: none;
+            }
+
+            .dropdown {
+                display: block;
+
+                p {
+                    font-family: Roboto, sans-serif;
+                    font-size: 15px;
+                    color: #000;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+
+                a {
+                    text-decoration: none;
+
+                    p {
+                        font-family: Roboto, sans-serif;
+                        font-size: 15px;
+                        color: #000;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#chicken {
+    min-height: 641px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/images/banner.png);
+    background-position: center;
+    background-size: cover;
+
+    .chickenTxt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            color: #fff;
+            font-family: Satisfy, cursive;
+            font-size: 100px;
+            width: 70%;
+            text-align: center;
+        }
+    }
+}
+
+
+#chickenProducts {
+    min-height: 900px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #productsAll {
+        min-height: 500px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .miniDiv {
+            width: 32%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            h2 {
+                color: #222;
+                font-family: Satisfy, cursive;
+                font-size: 20px;
+            }
+
+            img {
+                width: 80%;
+                border-radius: 15px;
+            }
+
+            .wishhAdd {
+                width: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                button {
+                    color: #FFC104;
+                    font-weight: 700;
+                    background-color: transparent;
+                    border: none;
+
+                    i {
+                        font-size: 20px;
+                        color: #FFC104;
+                        transition: 0.5s ease;
+                        background-color: transparent;
+                        &:hover{
+                            color: #c29306;
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
+    .loadMore{
+        min-height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button{
+            width: 15%;
+            min-height: 50px;
+            border: none;
+            background-color: #FFC104;
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+}
